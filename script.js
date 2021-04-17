@@ -58,6 +58,8 @@ creations.forEach((creation) => {
   card_title.innerText = creation.name;
   card.appendChild(card_title);
   container.appendChild(card);
+
+
 });
 
 /* RESPONSIVE MENU */
@@ -102,3 +104,14 @@ if (window.innerWidth >= 1000) {
   device_desktop = false;
 }
 window.resizeTo;
+
+
+  //! FUN */
+
+  const modal = document.querySelector('.modal');
+  function showModal(){
+    modal.style.display ="block";
+  }
+ 
+    //! END FUN */
+  
