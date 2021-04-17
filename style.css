@@ -18,14 +18,16 @@ html {
 - Dark Gray: hsl(0, 0%, 55%)
 - Very Dark Gray: hsl(0, 0%, 41%) */
 nav {
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  position: absolute;
   z-index: 10;
-  width: 100vw;
   justify-content: space-between;
-  padding-top: 80px;
   transition: 0.5s;
   position: fixed;
+  padding: 10vw;
+  padding-top: 5vw;
 }
 
 #logo {
@@ -34,7 +36,7 @@ nav {
   text-transform: lowercase;
   font-family: "Alata", "sans-serif";
   line-height: 0;
-  margin-left: 11.5vw;
+  /* margin-left: 11.5vw; */
   z-index: 1000;
   filter: inherit;
   height: fit-content;
@@ -42,7 +44,7 @@ nav {
 
 ul.menu {
   display: flex;
-  margin-right: 180px;
+  
 }
 
 li {
@@ -98,7 +100,7 @@ header {
   font-size: 75px;
   bottom: 0;
   margin-top: 50;
-  margin-left: 11.5vw;
+  margin-left: 10vw;
   padding-right: 110px;
   position: absolute;
   margin-bottom: 130px;
@@ -106,7 +108,8 @@ header {
 }
 
 main {
-  padding: 180px;
+  padding: 1px;
+padding: 10vw;
   position: relative;
 }
 
@@ -184,7 +187,6 @@ button#seeAll {
   justify-content: space-between;
   height: max-content;
   flex-wrap: wrap;
-  column-gap: 25px;
   column-count: 4;
 }
 
@@ -199,6 +201,14 @@ button#seeAll {
   margin-bottom: 25px;
 }
 
+.card:hover{
+  box-shadow: inset 0 0 120px 120px rgba(255, 255, 255, 0.645);
+  cursor: pointer;
+}
+
+.card:hover .card-title{
+  color: black;
+}
 .card-title {
   color: white;
   position: absolute;
@@ -213,8 +223,11 @@ button#seeAll {
 footer {
   background-color: black;
   display: flex;
-  padding: 50px 180px;
+  padding: 10vw;
   justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #footer-logo {
@@ -249,7 +262,7 @@ footer {
 #icon-menu {
   display: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   #logo {
     line-height: normal;
     margin-left: 0;
@@ -308,12 +321,13 @@ footer {
     width: fit-content;
     font-weight: 100;
     font-size: 40px;
+    margin :0;
     margin-left: 25px;
     height: fit-content;
-
+    bottom: 50%;
     transform: translateY(-50%);
-
     filter: initial;
+    top: 50%;
   }
 
   main {
@@ -357,7 +371,9 @@ footer {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    
   }
+ 
   .card-title {
     font-size: 20px;
     width: 40%;
