@@ -60,6 +60,7 @@ creations.forEach((creation) => {
   container.appendChild(card);
 
 
+  
 });
 
 /* RESPONSIVE MENU */

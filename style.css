@@ -35,7 +35,7 @@ nav {
   font-weight: 800;
   text-transform: lowercase;
   font-family: "Alata", "sans-serif";
-  line-height: 0;
+  line-height: 10px;
   /* margin-left: 11.5vw; */
   z-index: 1000;
   filter: inherit;
@@ -48,7 +48,7 @@ ul.menu {
 }
 
 li {
-  margin-right: 30px;
+  margin-left: 30px;
   cursor: pointer;
   align-items: center;
 }
@@ -235,15 +235,20 @@ footer {
   font-weight: 900;
   text-transform: lowercase;
   font-family: "Alata", "sans-serif";
-  line-height: 0;
+  line-height: 10px;
 }
+
 #footer-menu-container {
   display: block;
 }
 
+#footer-menu.menu ul{
+  margin: 0px 0px 0px 30px;
+}
+
 #footer-menu {
   margin-top: 40px;
-  transform: translateX(-40px);
+  transform: translateX(-70px);
 }
 
 #social-media {
@@ -262,15 +267,18 @@ footer {
 #icon-menu {
   display: none;
 }
+
 @media (max-width: 700px) {
   #logo {
     line-height: normal;
     margin-left: 0;
   }
+
   nav {
     height: fit-content;
     padding: 20px 20px;
   }
+
   #nav-menu {
     bottom: 50%;
     transform: translateY(50%);
@@ -339,6 +347,7 @@ footer {
   main {
     padding: 20px;
   }
+
   #intro {
   }
 
@@ -347,6 +356,7 @@ footer {
     margin-bottom: 40px;
     margin-top: 60px;
   }
+
   #intro-title,
   #creations-title {
     font-size: 40px;
@@ -371,6 +381,7 @@ footer {
     line-height: 32px;
     padding: 20px;
   }
+
   .card {
     width: max-content;
     height: 100px;
