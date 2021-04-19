@@ -109,10 +109,10 @@ window.resizeTo;
 
   //! FUN */
 
-  const modal = document.querySelector('.modal');
+ /*  const modal = document.querySelector('.modal');
   function showModal(){
     modal.style.display ="block";
-  }
+  } */
  
     //! END FUN */
   
